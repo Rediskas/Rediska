@@ -1,7 +1,7 @@
 import telebot
 
 bot = telebot.TeleBot('1053474569:AAEH7lPrmQrL7D7-8yUTcEg589uN9pbUoPY')
-keyboard1 = telebot.types.ReplyKeyboardMarkup(1)
+keyboard1 = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
 keyboard1.row('Понеділок', 'Вівторок', 'Середа','Четвер',"П'ятниця")
 
 @bot.message_handler(commands=['start'])
